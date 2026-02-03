@@ -28,27 +28,32 @@ export function ProblemSection() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto">
+        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
             {t.problem.title}
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* Problem Cards */}
+        <div className="grid gap-8 max-w-6xl mx-auto sm:grid-cols-1 md:grid-cols-3">
           {problems.map((problem, index) => (
             <div
               key={index}
               className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <div className={`w-16 h-16 bg-gradient-to-br ${problem.color} rounded-2xl flex items-center justify-center mb-6`}>
+              {/* Icon */}
+              <div
+                className={`w-16 h-16 bg-gradient-to-br ${problem.color} rounded-2xl flex items-center justify-center mb-6`}
+              >
                 <problem.icon className="w-8 h-8 text-white" />
               </div>
+
+              {/* Title & Description */}
               <h3 className="text-2xl font-bold text-gray-900 mb-3">
                 {problem.title}
               </h3>
-              <p className="text-gray-600 leading-relaxed">
-                {problem.description}
-              </p>
+              <p className="text-gray-600 leading-relaxed">{problem.description}</p>
             </div>
           ))}
         </div>

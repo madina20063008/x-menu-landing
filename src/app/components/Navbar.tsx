@@ -29,57 +29,31 @@ export function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <button
-              onClick={() => scrollToSection('features')}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              {t.nav.features}
-            </button>
-            <button
-              onClick={() => scrollToSection('pricing')}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              {t.nav.pricing}
-            </button>
-            <button
-              onClick={() => scrollToSection('faq')}
-              className="text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              {t.nav.faq}
-            </button>
+            {['features', 'pricing', 'faq'].map((section) => (
+              <button
+                key={section}
+                onClick={() => scrollToSection(section)}
+                className="text-gray-700 hover:text-blue-600 transition-colors text-sm sm:text-base"
+              >
+                {t.nav[section as keyof typeof t.nav]}
+              </button>
+            ))}
 
             {/* Language Switcher */}
             <div className="flex items-center gap-1 bg-gray-100 rounded-lg p-1">
-              <button
-                onClick={() => setLanguage('en')}
-                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
-                  language === 'en'
-                    ? 'bg-white text-blue-600 shadow-sm'
-                    : 'text-gray-600 hover:text-gray-900'
-                }`}
-              >
-                EN
-              </button>
-              <button
-                onClick={() => setLanguage('ru')}
-                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
-                  language === 'ru'
-                    ? 'bg-white text-blue-600 shadow-sm'
-                    : 'text-gray-600 hover:text-gray-900'
-                }`}
-              >
-                RU
-              </button>
-              <button
-                onClick={() => setLanguage('uz')}
-                className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
-                  language === 'uz'
-                    ? 'bg-white text-blue-600 shadow-sm'
-                    : 'text-gray-600 hover:text-gray-900'
-                }`}
-              >
-                UZ
-              </button>
+              {(['en', 'ru', 'uz'] as Language[]).map((lang) => (
+                <button
+                  key={lang}
+                  onClick={() => setLanguage(lang)}
+                  className={`px-3 py-1 rounded-md text-sm font-medium transition-colors ${
+                    language === lang
+                      ? 'bg-white text-blue-600 shadow-sm'
+                      : 'text-gray-600 hover:text-gray-900'
+                  }`}
+                >
+                  {lang.toUpperCase()}
+                </button>
+              ))}
             </div>
 
             <Button variant="outline" size="sm">
@@ -101,57 +75,29 @@ export function Navbar() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200">
           <div className="px-4 py-4 space-y-4">
-            <button
-              onClick={() => scrollToSection('features')}
-              className="block w-full text-left text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              {t.nav.features}
-            </button>
-            <button
-              onClick={() => scrollToSection('pricing')}
-              className="block w-full text-left text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              {t.nav.pricing}
-            </button>
-            <button
-              onClick={() => scrollToSection('faq')}
-              className="block w-full text-left text-gray-700 hover:text-blue-600 transition-colors"
-            >
-              {t.nav.faq}
-            </button>
+            {['features', 'pricing', 'faq'].map((section) => (
+              <button
+                key={section}
+                onClick={() => scrollToSection(section)}
+                className="block w-full text-left text-gray-700 hover:text-blue-600 transition-colors"
+              >
+                {t.nav[section as keyof typeof t.nav]}
+              </button>
+            ))}
 
             {/* Mobile Language Switcher */}
             <div className="flex items-center gap-2 pt-2">
-              <button
-                onClick={() => setLanguage('en')}
-                className={`flex-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  language === 'en'
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-100 text-gray-600'
-                }`}
-              >
-                EN
-              </button>
-              <button
-                onClick={() => setLanguage('ru')}
-                className={`flex-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  language === 'ru'
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-100 text-gray-600'
-                }`}
-              >
-                RU
-              </button>
-              <button
-                onClick={() => setLanguage('uz')}
-                className={`flex-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
-                  language === 'uz'
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-100 text-gray-600'
-                }`}
-              >
-                UZ
-              </button>
+              {(['en', 'ru', 'uz'] as Language[]).map((lang) => (
+                <button
+                  key={lang}
+                  onClick={() => setLanguage(lang)}
+                  className={`flex-1 px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    language === lang ? 'bg-blue-600 text-white' : 'bg-gray-100 text-gray-600'
+                  }`}
+                >
+                  {lang.toUpperCase()}
+                </button>
+              ))}
             </div>
 
             <Button variant="outline" className="w-full">
