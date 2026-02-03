@@ -8,7 +8,6 @@ export function CTASection() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
       
-      {/* Background Decoration */}
       <div className="absolute top-0 right-0 w-56 h-56 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-white/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-56 h-56 sm:w-80 sm:h-80 lg:w-96 lg:h-96 bg-white/10 rounded-full blur-3xl" />
 

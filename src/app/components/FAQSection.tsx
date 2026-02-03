@@ -23,14 +23,12 @@ export function FAQSection() {
     >
       <div className="max-w-4xl mx-auto">
 
-        {/* TITLE */}
         <div className="text-center mb-10 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
             {t.faq.title}
           </h2>
         </div>
 
-        {/* ACCORDION */}
         <div className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-lg">
           <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
             {faqs.map((faq, index) => (

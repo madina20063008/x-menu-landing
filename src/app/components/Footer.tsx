@@ -8,10 +8,8 @@ export function Footer() {
     <footer className="bg-gray-900 text-white px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
       <div className="max-w-7xl mx-auto">
 
-        {/* TOP */}
         <div className="grid gap-10 sm:gap-12 md:grid-cols-2 lg:grid-cols-4 mb-10 sm:mb-12">
 
-          {/* LOGO */}
           <div className="text-center md:text-left">
             <div className="flex justify-center md:justify-start items-center gap-2 mb-4">
               <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center">
@@ -37,7 +35,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* PRODUCT */}
           <div className="text-center md:text-left">
             <h3 className="font-bold text-base sm:text-lg mb-3 sm:mb-4">
               {t.footer.product}
@@ -49,7 +46,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* COMPANY */}
           <div className="text-center md:text-left">
             <h3 className="font-bold text-base sm:text-lg mb-3 sm:mb-4">
               {t.footer.company}
@@ -61,7 +57,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* SUPPORT */}
           <div className="text-center md:text-left">
             <h3 className="font-bold text-base sm:text-lg mb-3 sm:mb-4">
               {t.footer.support}
@@ -75,7 +70,6 @@ export function Footer() {
 
         </div>
 
-        {/* BOTTOM */}
         <div className="pt-6 sm:pt-8 border-t border-gray-800 flex flex-col md:flex-row gap-3 sm:gap-4 justify-between items-center text-center md:text-left">
           <p className="text-gray-400 text-xs sm:text-sm">
             © 2026 Smart QR Menu. {t.footer.rights}

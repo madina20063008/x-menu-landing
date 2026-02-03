@@ -21,7 +21,6 @@ export function AdminShowcaseSection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
 
-          {/* LEFT */}
           <div className="space-y-8 text-center lg:text-left">
             <div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
@@ -51,7 +50,6 @@ export function AdminShowcaseSection() {
             </div>
           </div>
 
-          {/* RIGHT */}
           <div className="relative order-first lg:order-none">
             <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
               <div className="bg-gradient-to-r from-blue-600 to-indigo-600 p-5 sm:p-6">
@@ -75,7 +73,6 @@ export function AdminShowcaseSection() {
               />
             </div>
 
-            {/* FLOATING CARD */}
             <div className="absolute -bottom-5 -left-5 sm:-bottom-6 sm:-left-6 bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl p-3 sm:p-4 shadow-xl">
               <p className="text-white text-xs sm:text-sm font-medium">
                 Active Menus

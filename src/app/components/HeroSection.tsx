@@ -10,7 +10,6 @@ export function HeroSection() {
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
 
-          {/* LEFT */}
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-900 leading-tight">
@@ -21,7 +20,6 @@ export function HeroSection() {
               </p>
             </div>
 
-            {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
                 size="lg"
@@ -40,7 +38,6 @@ export function HeroSection() {
               </Button>
             </div>
 
-            {/* TRUST */}
             <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-6 pt-4 justify-center lg:justify-start">
               <div className="flex items-center gap-2 justify-center lg:justify-start">
                 <div className="w-9 h-9 sm:w-10 sm:h-10 bg-blue-100 rounded-full flex items-center justify-center">
@@ -72,7 +69,6 @@ export function HeroSection() {
             </div>
           </div>
 
-          {/* RIGHT */}
           <div className="relative order-first lg:order-none">
             <div className="relative z-10">
               <div className="relative mx-auto max-w-xs sm:max-w-sm">
@@ -86,7 +82,6 @@ export function HeroSection() {
                 </div>
               </div>
 
-              {/* FLOATING – hide on mobile */}
               <div className="hidden sm:block absolute -left-6 top-12 bg-white rounded-2xl shadow-xl p-3 sm:p-4 border border-gray-200 animate-float">
                 <img
                   src="https://images.unsplash.com/photo-1569908420024-c8f709b75700?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
@@ -119,7 +114,6 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* BG BLUR */}
             <div className="absolute top-0 right-0 w-56 sm:w-72 h-56 sm:h-72 bg-blue-200 rounded-full blur-3xl opacity-30 -z-10" />
             <div className="absolute bottom-0 left-0 w-56 sm:w-72 h-56 sm:h-72 bg-indigo-200 rounded-full blur-3xl opacity-30 -z-10" />
           </div>

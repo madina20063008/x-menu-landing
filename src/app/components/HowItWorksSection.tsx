@@ -31,7 +31,6 @@ export function HowItWorksSection() {
   return (
     <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
       <div className="max-w-7xl mx-auto">
-        {/* Title */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
             {t.howItWorks.title}
@@ -39,20 +38,17 @@ export function HowItWorksSection() {
         </div>
 
         <div className="relative grid gap-8 md:grid-cols-3">
-          {/* Connection line — faqat desktop */}
           <div className="hidden md:block absolute top-24 left-0 right-0 h-1 bg-gradient-to-r from-blue-200 via-indigo-200 to-purple-200 -z-10" />
 
           {steps.map((step, index) => (
             <div key={index} className="relative">
               <div className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl hover:shadow-2xl transition-shadow">
-                {/* Step number */}
                 <div
                   className={`absolute -top-5 sm:-top-6 left-6 sm:left-8 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br ${step.color} rounded-full flex items-center justify-center text-white font-bold shadow-lg`}
                 >
                   {step.number}
                 </div>
 
-                {/* Icon */}
                 <div
                   className={`w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br ${step.color} rounded-2xl flex items-center justify-center mb-5 sm:mb-6 mt-6`}
                 >

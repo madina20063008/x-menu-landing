@@ -34,7 +34,6 @@ export function AnalyticsSection() {
     <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
 
-        {/* HEADER */}
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {t.analytics.title}
@@ -46,7 +45,6 @@ export function AnalyticsSection() {
 
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-12 items-center">
 
-          {/* LEFT – FEATURES */}
           <div className="space-y-4 sm:space-y-6">
             {features.map((feature, index) => (
               <div
@@ -65,7 +63,6 @@ export function AnalyticsSection() {
             ))}
           </div>
 
-          {/* RIGHT – CHART */}
           <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl p-6 sm:p-8 border border-blue-200">
             <div className="mb-6">
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-1 sm:mb-2">
@@ -76,7 +73,6 @@ export function AnalyticsSection() {
               </p>
             </div>
 
-            {/* STATS */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-6 sm:mb-8">
               <div className="bg-white rounded-xl p-4 shadow-sm">
                 <p className="text-xs sm:text-sm text-gray-500">Total</p>
@@ -95,7 +91,6 @@ export function AnalyticsSection() {
               </div>
             </div>
 
-            {/* LINE CHART */}
             <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm">
               <ResponsiveContainer width="100%" height={220}>
                 <LineChart data={mockData}>

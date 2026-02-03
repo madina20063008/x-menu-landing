@@ -28,21 +28,18 @@ export function TestimonialsSection() {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
             {t.testimonials.title}
           </h2>
         </div>
 
-        {/* Testimonials Grid */}
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
               className="bg-gradient-to-br from-gray-50 to-white rounded-3xl p-8 border border-gray-200 hover:shadow-xl transition-shadow duration-300"
             >
-              {/* Star Ratings */}
               <div className="flex gap-1 mb-6">
                 {[...Array(5)].map((_, i) => (
                   <Star
@@ -52,12 +49,10 @@ export function TestimonialsSection() {
                 ))}
               </div>
 
-              {/* Testimonial Text */}
               <p className="text-gray-700 leading-relaxed mb-8 italic">
                 "{testimonial.text}"
               </p>
 
-              {/* Author Info */}
               <div className="flex items-center gap-4">
                 <img
                   src={testimonial.image}

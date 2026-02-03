@@ -49,7 +49,6 @@ export function PricingSection() {
       className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50"
     >
       <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
             {t.pricing.title}
@@ -57,7 +56,6 @@ export function PricingSection() {
           <p className="text-xl text-gray-600">{t.pricing.subtitle}</p>
         </div>
 
-        {/* Pricing Cards */}
         <div className="grid gap-8 max-w-6xl mx-auto md:grid-cols-3">
           {plans.map((plan, index) => (
             <div
@@ -68,14 +66,12 @@ export function PricingSection() {
                   : 'shadow-lg hover:shadow-xl'
               }`}
             >
-              {/* Popular Badge */}
               {plan.popular && (
                 <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
                   {t.pricing.popular}
                 </div>
               )}
 
-              {/* Plan Title & Price */}
               <div className="mb-8">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
                 <div className="flex items-baseline gap-2">
@@ -84,7 +80,6 @@ export function PricingSection() {
                 </div>
               </div>
 
-              {/* Features List */}
               <ul className="space-y-4 mb-8">
                 {plan.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start gap-3">
@@ -96,7 +91,6 @@ export function PricingSection() {
                 ))}
               </ul>
 
-              {/* CTA Button */}
               <Button
                 className={`w-full py-6 text-lg rounded-2xl transition-colors duration-300 ${
                   plan.popular
