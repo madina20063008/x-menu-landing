@@ -1,4 +1,4 @@
-import { useLanguage } from '@/app/contexts/LanguageContext';
+import { useLanguage } from '../contexts/LanguageContext';
 import { QrCode, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export function Footer() {

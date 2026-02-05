@@ -1,5 +1,5 @@
-import { useLanguage } from '@/app/contexts/LanguageContext';
-import { Button } from '@/app/components/ui/button';
+import { useLanguage } from '../contexts/LanguageContext';
+import { Button } from '../components/ui/button';
 import { Check } from 'lucide-react';
 
 export function PricingSection() {
@@ -50,7 +50,7 @@ export function PricingSection() {
     >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             {t.pricing.title}
           </h2>
           <p className="text-xl text-gray-600">{t.pricing.subtitle}</p>

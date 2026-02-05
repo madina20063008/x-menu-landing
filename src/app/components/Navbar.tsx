@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Menu, X, QrCode } from 'lucide-react';
-import { Button } from '@/app/components/ui/button';
-import { useLanguage, Language } from '@/app/contexts/LanguageContext';
+import { Button } from '../components/ui/button';
+import { useLanguage, Language } from '../contexts/LanguageContext';
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

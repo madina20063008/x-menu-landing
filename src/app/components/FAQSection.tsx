@@ -1,10 +1,10 @@
-import { useLanguage } from '@/app/contexts/LanguageContext';
+import { useLanguage } from '../contexts/LanguageContext';
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from '@/app/components/ui/accordion';
+} from '../components/ui/accordion';
 
 export function FAQSection() {
   const { t } = useLanguage();

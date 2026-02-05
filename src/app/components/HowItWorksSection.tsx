@@ -1,4 +1,4 @@
-import { useLanguage } from '@/app/contexts/LanguageContext';
+import { useLanguage } from '../contexts/LanguageContext';
 import { UserPlus, Upload, Rocket } from 'lucide-react';
 
 export function HowItWorksSection() {
