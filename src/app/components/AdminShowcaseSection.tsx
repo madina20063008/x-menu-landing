@@ -35,10 +35,10 @@ export function AdminShowcaseSection() {
               {adminFeatures.map((feature, index) => (
                 <div
                   key={index}
-                  className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 sm:p-6 border border-white/20 hover:bg-white/20 transition-colors"
+                  className="bg-white/10 backdrop-blur-sm rounded-2xl p-5 sm:p-6 flex items-center gap-7 border border-white/20 hover:bg-white/20 transition-colors"
                 >
                   <div
-                    className={`w-11 h-11 sm:w-12 sm:h-12 ${feature.color} rounded-xl flex items-center justify-center mb-3`}
+                    className={`w-11 h-11 sm:w-12 sm:h-12 ${feature.color} rounded-xl flex items-center justify-center `}
                   >
                     <feature.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </div>

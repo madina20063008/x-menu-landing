@@ -16,7 +16,7 @@ export function HeroSection() {
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 {t.hero.title}
               </h1>
-              <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-xl mx-auto lg:mx-0">
+              <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-xl mx-auto py-6 lg:mx-0">
                 {t.hero.subtitle}
               </p>
             </div>
