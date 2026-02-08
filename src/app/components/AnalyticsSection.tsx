@@ -1,4 +1,4 @@
-import { useLanguage } from '@/app/contexts/LanguageContext';
+import { useLanguage } from '../contexts/LanguageContext';
 import { Calendar, FileText, TrendingUp, Download } from 'lucide-react';
 import {
   LineChart,

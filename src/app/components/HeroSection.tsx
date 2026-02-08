@@ -1,5 +1,5 @@
-import { Button } from '@/app/components/ui/button';
-import { useLanguage } from '@/app/contexts/LanguageContext';
+import { Button } from '../components/ui/button';
+import { useLanguage } from '../contexts/LanguageContext';
 import { ArrowRight, Users, TrendingUp } from 'lucide-react';
 
 export function HeroSection() {
